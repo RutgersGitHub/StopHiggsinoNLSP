@@ -137,6 +137,36 @@ main()
     echo "Higgsinos decayed to a pair of Z bosons!!!"
     cp ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe
 
+  elif [ ${HIGGSBOSONDECAYMODE} = "www" ]
+  then
+
+    echo "In www"
+    ./DECAYRUNNER.sh ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe 25 hww.lhe ${TAGNAME}_${HIGGSBOSONDECAYMODE}
+
+  elif [ ${HIGGSBOSONDECAYMODE} = "zzw" ]
+  then
+
+    echo "In zzw"
+    ./DECAYRUNNER.sh ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe 25 hzz.lhe ${TAGNAME}_${HIGGSBOSONDECAYMODE}
+
+  elif [ ${HIGGSBOSONDECAYMODE} = "ttw" ]
+  then
+
+    echo "In ttw"
+    ./DGERUNNERsing.sh ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe 25 htautau 2HDMaa ${TAGNAME}_${HIGGSBOSONDECAYMODE}
+
+  elif [ ${HIGGSBOSONDECAYMODE} = "bbw" ]
+  then
+
+    echo "In bbw"
+    ./DGERUNNERsing.sh ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe 25 hbb 2HDMaa ${TAGNAME}_${HIGGSBOSONDECAYMODE}
+
+  elif [ ${HIGGSBOSONDECAYMODE} = "aaw" ]
+  then
+
+    echo "In aaw"
+    ./DGERUNNERsing.sh ${LHEPATH}/${TAGNAME}.lhe ${LHEPATH}/${TAGNAME}_${HIGGSBOSONDECAYMODE}.lhe 25 haa 2HDMaa ${TAGNAME}_${HIGGSBOSONDECAYMODE}
+
   else
 
     echo "Run script did not run properly!!!"
