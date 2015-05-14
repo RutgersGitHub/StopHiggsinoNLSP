@@ -1,6 +1,6 @@
 # Instructions after checking out repository
-A. Update the MAINDIR shell variable in StopHiggsinoNLSP.cfg with your current 
-   working path
+A. Update the MAINDIR shell variable in StopHiggsinoNLSP.cfg with your 
+   current working path
 
 # Special instructions
 A. You will need to download MadGraph5 v2.1.1 or later,
@@ -8,7 +8,8 @@ A. You will need to download MadGraph5 v2.1.1 or later,
 
 B. You will need to download BRIDGE v2.24 or later and 
    then properly compile it using directions found in the 
-   RutgersMCGuide_temp.pdf document
+   document:
+   https://github.com/RutgersGitHub/MCProductionGuide/blob/master/notes/tmp/RutgersMCGuide_temp.pdf
 
 C. Download the Explicit Higgs Decayer from Rutgers multilepton twiki:
    https://twiki.cern.ch/twiki/pub/CMS/RutgersMultileptonSignalGenerationExamples/BRIDGESCRIPTS.tar.gz
